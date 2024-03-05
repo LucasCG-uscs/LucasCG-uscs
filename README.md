@@ -2,7 +2,7 @@
 - 👀 I’m interested in create projects for academic purposes 
 - 🌱 I’m currently learning basic of computer science
 - 💞️ I’m looking to learn more about computer science
-- 📫 How to reach me: cel- +55(11)99358-4774 / email:lucas.guimaraes@uscsonline.com.br
+- 📫 How to reach me: cel- +55(11)99358-4774 / email:lucas.guimaraes@uscsonline.com.br or lucasguimaraes0323@gmail.com for my personal email
 - ⚡ Fun fact: ...
 
 <!---
