@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @LucasCG-uscs
+- 👋 Hi, I’m Lucas Guimarães
 - 👀 I’m interested in create projects for academic purposes 
 - 🌱 I’m currently learning basic of computer science
 - 💞️ I’m looking to learn more about computer science
