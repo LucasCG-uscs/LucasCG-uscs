@@ -1,0 +1,207 @@
+//1.9
+#include<stdio.h>
+int main(){
+
+    float valor_total,valor_desconto;
+
+    printf("Informe o valor total: \n");
+    scanf("%f",&valor_total);
+    //1.9.1
+    valor_desconto=valor_total-(valor_total*0.1);
+    printf("O valor a pagar com 10 por cento de desconto: %.2f\n",valor_desconto);
+    //1.9.2
+    printf("o valor de cada parcela: %.2f\n",valor_total/3);
+    //1.9.3
+    printf("Comissao do vendedor para a venda a vista:%.2f\n",valor_desconto*0.05);
+    //1.9.4
+    printf("Comissao do vendedor para vena parcelada:%.2f\n",valor_total*0.05);
+
+return 0;
+}
+--------------------------------------------------------------------------------------------------------------
+//2.1
+#include<stdio.h>
+#include<locale.h>
+int main(){
+    setlocale(LC_ALL,"Portuguese");
+
+    int a,b;
+
+    printf("Digite dois numeros inteiros separados por um espaco: \n");
+    scanf("%d %d",&a,&b);
+
+    if(a>b)
+        printf("O maior é: %d\n",a);
+    else if(b>a)
+        printf("O maior é: %d\n",b);
+    else if(a==b)
+        printf("os dois numeros sao iguais !");
+
+return 0;
+}
+-----------------------------------------------------------------------------------------------------------------------
+//2.2
+#include<stdio.h>
+#include<locale.h>
+#include<math.h>
+int main(){
+    setlocale(LC_ALL,"Portuguese");
+
+    int a, raiz_quadrada;
+
+    printf("Digite um numero inteiro: \n");
+    scanf("%d",&a);
+
+    if(a>0){
+        raiz_quadrada=sqrt(a);
+        printf("raiz quadrada do numero digitado: %d\n",raiz_quadrada);
+    }
+    else if(a<0)
+        printf("Numero invalido!");
+  
+return 0;
+}
+----------------------------------------------------------------------------------------------------------------------
+//2.3
+#include<stdio.h>
+#include<locale.h>
+#include<math.h>
+int main(){
+    setlocale(LC_ALL,"Portuguese");
+
+    int a,raiz_quadrada,potencia;
+
+    printf("Digite um numero: \n");
+    scanf("%d",&a);
+
+    if(a>0){
+    raiz_quadrada=sqrt(a);
+    printf("A raiz quadrada do numero é: %d\n",raiz_quadrada);
+    }
+    else if(a<0){
+        potencia=pow(a,2);
+        printf("O quadrado do numero: %d\n",potencia);
+    }
+return 0;
+}
+-------------------------------------------------------------------------------------------------------
+//2.4(2.4.1 e 2.4.2)
+#include<stdio.h>
+#include<locale.h>
+#include<math.h>
+int main(){
+    setlocale(LC_ALL,"Portuguese");
+
+    int a,raiz_quadrada,potencia;
+
+    printf("Digite um numero inteiro: \n");
+    scanf("%d",&a);
+
+    if(a>0){
+        raiz_quadrada=sqrt(a);
+        potencia=pow(a,2);
+        printf("raiz quadrada do numero digitado: %d\n",raiz_quadrada);
+        printf("quadrado do numero digitado: %d\n",potencia);
+    }
+return 0;
+}
+----------------------------------------------------------------------------------------------------------
+//2.5
+#include<stdio.h>
+#include<locale.h>
+#include<math.h>
+int main(){
+    setlocale(LC_ALL,"Portuguese");
+    
+    int a;
+    printf("Digite um numero inteiro: \n");
+    scanf("%d",&a);
+
+    if(a%2==0)
+        printf("O numero digitado é par\n");
+    else
+        printf("O numero digitado é impar");
+return 0;
+}
+-------------------------------------------------------------------------------------------------
+//2.6 e 2.7
+#include<stdio.h>
+#include<locale.h>
+#include<math.h>
+int main(){
+    setlocale(LC_ALL,"Portuguese");
+
+    int a,b;
+
+    printf("Digite dois numeros inteiros separados por um espaço: \n");
+    scanf("%d %d",&a,&b);
+
+    if(a>b){
+        printf("O maior numero é: %d\n",a);
+        printf("a diferença entre os dois numeros é: %d\n",a-b);
+    }
+    else if(b>a){
+        printf("O maior numero é: %d\n",b);
+        printf("A diferença enrte os numeros é: %d\n",b-a);
+    }
+    else if(a==b)
+    printf("Os dois numeros sao iguais!");
+return 0;
+}
+-----------------------------------------------------------------------------------------
+//2.8
+#include<stdio.h>
+#include<locale.h>
+#include<math.h>
+int main(){
+    setlocale(LC_ALL,"Portuguese");
+
+    float n1,n2;
+
+    printf("digite as notas separadas por um espaço: \n");
+    scanf("%f %f",&n1,&n2);
+
+    if(n1<=10 && n1>=0){
+        if(n2<=10 && n2>=0){
+            
+            printf("A media das notas é:%.1f\n",(n1+n2)/2);
+        }
+        
+        else {
+            printf("Nota inválida!\n"); 
+        }
+    }    
+    else {
+        printf("Nota inválida!\n");
+    }
+    
+return 0;
+}
+----------------------------------------------------------------------------------------------------------
+//2.9
+#include<stdio.h>
+#include<locale.h>
+int main(){
+    setlocale(LC_ALL,"Portuguese");
+
+    float salario,prestacao;
+
+    printf("Informe o salario: \n");
+    scanf("%f",&salario);
+
+    printf("Informe o valor da prestacao: \n");
+    scanf("%f",&prestacao);
+
+    if(prestacao>(salario*0.2)){
+
+        printf("Emprestimo nao concedido!\n");
+
+    }
+    else{
+
+        printf("Emprestimo concedido!\n");
+
+    }
+    
+return 0;
+}
